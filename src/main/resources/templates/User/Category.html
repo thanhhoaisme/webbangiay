@@ -1,0 +1,130 @@
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/Category.css">
+    <script src="../../static/js/include.js"></script>
+    <title>Sneakers Store</title>
+</head>
+
+<body>
+    
+    <div id="header-placeholder"></div>
+    
+    <main class="product-page">
+        <!-- Sidebar filters -->
+        <aside class="filters">
+            <!-- <div class="filter-section">
+                <h3>Keywords</h3>
+                <div class="tags">
+                    <span class="tag">Spring <button class="remove">×</button></span>
+                    <span class="tag">Smart <button class="remove">×</button></span>
+                    <span class="tag">Modern <button class="remove">×</button></span>
+                </div>
+            </div> -->
+
+            <div class="filter-section">
+                <h3>Label</h3>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> Description</label>
+                    <label><input type="checkbox"> Description</label>
+                    <label><input type="checkbox"> Description</label>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Size</h3>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> 38</label>
+                    <label><input type="checkbox"> 39</label>
+                    <label><input type="checkbox"> 40</label>
+                    <label><input type="checkbox"> 41</label>
+                    <label><input type="checkbox"> 42</label>
+                    <label><input type="checkbox"> 43</label>
+                    <label><input type="checkbox"> 44</label>
+                    <label><input type="checkbox"> 45</label>
+                    <label><input type="checkbox"> 46</label>
+                    <label><input type="checkbox"> 47</label>
+                    <label><input type="checkbox"> 48</label>
+                    <label><input type="checkbox"> 49</label>
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="100" value="50">
+                <span>$0-100</span>
+            </div>
+
+           
+
+            <!-- Add other filter sections for Color, Size etc -->
+        </aside>
+
+        <!-- Product grid -->
+        <section class="products">
+            <div class="products-header">
+                <div class="sort-options">
+                    <button class="active">New</button>
+                    <button>Price ascending</button>
+                    <button>Price descending</button>
+                </div>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="../../static/img/air.png" alt="Nike Air Force 1" />
+                        </div>
+                    </a>
+                    <div class="product-title">Nike Air Force 1 '07</div>
+                    <div class="product-price">2,929,000₫</div>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="../../static/img/air2.png" alt="Nike Air Force 1" />
+                        </div>
+                    </a>
+                    <div class="product-title">Nike Air Force 1 '07</div>
+                    <div class="product-price">2,929,000₫</div>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="../../static/img/jordan.png" alt="Nike Air Force 1" />
+                        </div>
+                    </a>
+                    <div class="product-title">Nike Air Force 1 '07</div>
+                    <div class="product-price">2,929,000₫</div>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="../../static/img/jordan2.png" alt="Nike Air Force 1" />
+                        </div>
+                    </a>
+                    <div class="product-title">Nike Air Force 1 '07</div>
+                    <div class="product-price">2,929,000₫</div>
+                </div>
+                <div class="product-card">
+                    <a href="product.html">
+                        <div class="product-image">
+                            <img src="../../static/img/crater.png" alt="Nike Air Force 1" />
+                        </div>
+                    </a>
+                    <div class="product-title">Nike Air Force 1 '07</div>
+                    <div class="product-price">2,929,000₫</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../../static/js/category.js"></script>
+</body>
+</html>

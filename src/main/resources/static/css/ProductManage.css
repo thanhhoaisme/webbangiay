@@ -1,0 +1,84 @@
+/* Base styles */
+/* body {
+    overflow-x: hidden;
+} */
+
+/* Navbar positioning */
+/* .navbar {
+    z-index: 1020;
+    position: fixed;
+    width: 100%;
+    top: 0;
+} */
+
+/* Main content area */
+.main-content {
+    margin-left: 280px;
+    padding-top: 60px; /* Height of navbar */
+    position: relative;
+}
+
+/* Content wrapper adjustments */
+.content-wrapper {
+    padding: 2rem;
+    min-height: calc(100vh - 60px);
+    background-color: #f4f6f9;
+}
+
+/* Modal specific styles */
+.modal {
+    z-index: 1055 !important; /* Higher than navbar and backdrop */
+}
+
+.modal-backdrop {
+    z-index: 1054 !important; /* Just below modal, above navbar */
+}
+
+.modal-dialog {
+    margin: 2rem auto;
+    max-width: 500px;
+}
+
+.modal-content {
+    position: relative;
+    margin-top: 3rem; /* Add space from top */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Table styles */
+.table-responsive {
+    overflow-x: auto;
+    min-width: 900px;
+}
+
+.table td img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.table td {
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+/* Fix for modal open state */
+body.modal-open {
+    overflow: hidden;
+    padding-right: 0 !important; /* Prevent layout shift */
+}
+
+/* Ensure form elements are interactive */
+.modal-body {
+    position: relative;
+    z-index: 1056; /* Higher than modal backdrop */
+}
+
+/* Add Product button positioning */
+.d-flex.justify-content-between {
+    position: relative;
+    z-index: 1019; /* Below navbar but above content */
+}

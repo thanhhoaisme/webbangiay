@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/LoginRegister.css">
+
+    <title>Đăng nhập/Đăng ký</title>
+</head>
+<body>
+    <img src="../../static/img/sneakers.png" alt="Sneakers" class="logo">
+    <div class="login-container">
+      
+        <button class="close-button">×</button>
+        
+        <div class="tab-header">
+            <button class="tab-button active">ĐĂNG NHẬP</button>
+            <button class="tab-button">ĐĂNG KÝ</button>
+        </div>
+
+        <form class="login-form">
+            <div class="form-group">
+                <label class="form-label">EMAIL</label>
+                <input type="email" class="form-input" placeholder="Nhập Email">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">MẬT KHẨU</label>
+                <div class="password-field">
+                    <input type="password" class="form-input" placeholder="Nhập Mật Khẩu">
+                    <button type="button" class="password-toggle">👁</button>
+                </div>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Nhớ mật khẩu</label>
+            </div>
+
+            <button type="submit" class="login-button">ĐĂNG NHẬP</button>
+            
+            <a href="#" class="forgot-password">QUÊN MẬT KHẨU?</a>
+        </form>
+
+        <form class="register-form">
+            <div class="form-group">
+                <label class="form-label">HỌ VÀ TÊN</label>
+                <input type="text" class="form-input" placeholder="Nhập Họ và Tên">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">EMAIL</label>
+                <input type="email" class="form-input" placeholder="Nhập Email">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">ĐỊA CHỈ</label>
+                <input type="text" class="form-input" placeholder="Nhập Địa chỉ">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">MẬT KHẨU</label>
+                <div class="password-field">
+                    <input type="password" class="form-input password-input" placeholder="Nhập Mật Khẩu">
+                    <button type="button" class="password-toggle">👁</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">XÁC NHẬN MẬT KHẨU</label>
+                <div class="password-field">
+                    <input type="password" class="form-input confirm-password-input" placeholder="Nhập Lại Mật Khẩu">
+                    <button type="button" class="password-toggle">👁</button>
+                </div>
+            </div>
+
+            <button type="submit" class="login-button">ĐĂNG KÝ</button>
+        </form>
+    </div>
+
+    <script src="../../static/js/LoginRegister.js"></script>
+</body>
+</html>

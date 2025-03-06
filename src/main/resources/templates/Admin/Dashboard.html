@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/css/dashboard.css">
+    <script src="../../static/js/include.js"></script>
+    <!-- Add Chart.js and FullCalendar CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Include Sidebar -->
+        <div id="sidebar-placeholder"></div>
+
+            <!-- Include Navbar -->
+            <div id="navbar-placeholder"></div>
+        <div class="main-content">
+        
+
+            <!-- Main Content Area -->
+            <div class="content-wrapper p-4">
+            <h1 class="dashboard">Dashboard</h1>
+            
+            <div class="row">
+                <!-- Products Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card stats-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">Total Products</h6>
+                                    <h3 class="mb-0">150</h3>
+                                </div>
+                                <div class="stats-icon bg-primary">
+                                    <i class="bi bi-box"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Users Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card stats-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">User Registrations</h6>
+                                    <h3 class="mb-0">85</h3>
+                                </div>
+                                <div class="stats-icon bg-success">
+                                    <i class="bi bi-people"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Orders Card -->
+                <div class="col-md-4 mb-4">
+                    <div class="card stats-card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="text-muted">Total Orders</h6>
+                                    <h3 class="mb-0">42</h3>
+                                </div>
+                                <div class="stats-icon bg-warning">
+                                    <i class="bi bi-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- After stats cards -->
+                <div class="dashboard-grid">
+                    <!-- Sales Revenue Chart -->
+                    <div class="chart-container">
+                        <h5 class="chart-title">Monthly Revenue Overview</h5>
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                    
+                    <!-- Calendar Widget -->
+                    <div class="calendar-container">
+                        <h5 class="chart-title">Calendar</h5>
+                        <div id="calendar"></div>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <script src="../../static/js/dashboard.js"></script>
+            </div>
+        </div>
+</body>
+</html>

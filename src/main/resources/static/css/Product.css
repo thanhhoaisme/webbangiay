@@ -1,0 +1,136 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.product-image {
+    position: relative;
+    background-color: #f5f5f5;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 16px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.size-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.size-guide {
+    text-decoration: none;
+    color: #000;
+}
+
+.size-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.size-btn {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.size-btn:hover {
+    border-color: #000;
+}
+
+.size-btn.selected {
+    background: #000;
+    color: white;
+    border-color: #000;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.description-container {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #f8f8f8;
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.arrow {
+    font-size: 24px;
+    line-height: 1;
+    color: #333;
+}
