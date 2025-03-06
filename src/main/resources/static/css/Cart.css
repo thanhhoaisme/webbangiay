@@ -1,0 +1,133 @@
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.cart-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center; /* Căn giữa các phần tử */
+   align-items: flex-start; /* Căn trên cùng */
+
+}
+.cart-items-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 0 1 60%; /* Cố định width 60% */
+   max-width: 1000px; /* Giới hạn chiều rộng tối đa */
+
+}
+.cart-item {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 60%;
+    height: 220px;
+}
+
+.item-image {
+    width: 170px; /* Tăng kích thước hình ảnh */
+    height: auto;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.item-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-description, .item-color, .item-size {
+    color: gray;
+}
+
+.item-quantity {
+    display: flex;
+    align-items: center;
+}
+.decrease-quantity, .increase-quantity {
+    background: white; /* Màu nền cho nút */
+    border: 1px solid #ccc; /* Đường viền */
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 10px; /* Khoảng cách giữa các nút */
+    border-radius: 5px; /* Bo góc */
+}
+
+.quantity {
+    padding: 0 10px; /* Khoảng cách giữa số lượng và các nút */
+    border: 1px solid #ccc; /* Đường viền cho số lượng */
+    border-radius: 5px; /* Bo góc */
+    min-width: 30px; /* Đảm bảo chiều rộng tối thiểu */
+    text-align: center; /* Căn giữa số lượng */
+}
+.remove-item, .add-to-favorites {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.item-price, .total-price {
+    margin-left: 50px; /* Khoảng cách bên trái */
+    font-weight: bold; /* Để giá tiền nổi bật hơn */
+}
+
+.summary {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    height: 220px;
+    top: 20px;
+    flex: 0 1 35%; /* Cố định width 35% */
+    max-width: 400px; /* Giới hạn chiều rộng tối đa */
+}
+
+.summary-details {
+    margin-bottom: 20px;
+}
+.summary-details p {
+    background-color: white; /* Nền màu trắng cho các mục */
+    padding: 10px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+    margin: 10px 0; /* Khoảng cách giữa các mục */
+}
+.checkout-button {
+    background-color: black; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px; /* Khoảng cách bên trong */
+    border: none; /* Không có đường viền */
+    border-radius: 10px; /* Bo góc */
+    cursor: pointer; /* Con trỏ khi di chuột */
+    width: 100%; /* Chiều rộng 100% */
+    font-weight: bold; /* Chữ đậm */
+    text-align: center; /* Căn giữa chữ */
+
+}
+
+.remove-icon {
+    width: 15px; /* Điều chỉnh kích thước hình ảnh */
+    height: auto;
+}
+
+.checkout-message {
+    position: fixed; /* Cố định vị trí */
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đưa phần tử về giữa */
+    background-color: white; /* Nền màu trắng */
+    padding: 20px; /* Khoảng cách bên trong */
+    border-radius: 8px; /* Bo góc */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    z-index: 1000; /* Đảm bảo hiển thị trên các phần tử khác */
+    display: none; /* Ẩn thông báo ban đầu */
+}

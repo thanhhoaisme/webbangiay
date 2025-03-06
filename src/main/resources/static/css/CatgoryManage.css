@@ -1,0 +1,11 @@
+/* Main content area */
+.main-content {
+    margin-left: 280px;
+    padding-top: 60px; /* Height of navbar */
+    position: relative;
+}
+.table td:last-child {
+    width: 100px; /* Fixed width for actions column */
+    text-align: right;
+}
+

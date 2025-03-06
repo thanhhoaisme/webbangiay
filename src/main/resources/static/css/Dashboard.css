@@ -1,0 +1,81 @@
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    transition: all 0.3s;
+}
+
+.content-wrapper {
+    margin-top: 50px; /* Matches navbar height */
+    min-height: calc(100vh - 60px);
+    background-color: #f4f6f9;
+    font-size: 14px; /* Added smaller font size */
+}
+.dashboard {
+   font-size: 40px; /* Added smaller font size */
+}
+.stats-card {
+    transition: transform 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* .stats-card:hover {
+    transform: translateY(-5px);
+} */
+
+.stats-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats-icon i {
+    font-size: 24px;
+    color: white;
+}
+
+.bg-primary { background: #4e73df; }
+.bg-success { background: #1cc88a; }
+.bg-warning { background: #f6c23e; }
+/* ...existing code... */
+
+.chart-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.chart-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.calendar-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive grid */
+@media (min-width: 768px) {
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+}

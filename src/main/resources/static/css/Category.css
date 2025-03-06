@@ -1,0 +1,108 @@
+.product-page {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.filters {
+    width: 300px;
+    padding: 30px;
+    border: 1px solid #eee;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.remove {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.products {
+    flex: 1;
+}
+
+.products-header {
+    margin-bottom: 20px;
+}
+
+.sort-options {
+    display: flex;
+    gap: 15px;
+}
+
+.sort-options button {
+    padding: 8px 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.sort-options button.active {
+    background: #000;
+    color: white;
+    border-radius: 4px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    margin: 5px 0;
+}
+
+.product-price {
+    font-weight: bold;
+}
+.product-card {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.product-image img {
+    width: 100%;
+    height: auto; /* Đảm bảo hình ảnh không bị méo */
+}
+
+.product-label {
+    color: orange; /* Màu cho nhãn Bestseller */
+    font-weight: bold;
+}
+
+.product-colors {
+    font-size: 0.9em; /* Kích thước chữ cho thông tin màu sắc */
+    color: #666; /* Màu chữ nhạt hơn */
+}

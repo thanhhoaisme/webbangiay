@@ -1,0 +1,39 @@
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.logo {
+    height: 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.nav-link {
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    padding-left: 25px;
+}
+
+.nav-link i {
+    font-size: 20px;
+    width: 35px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover i {
+    transform: translateX(5px);
+}

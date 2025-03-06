@@ -1,0 +1,79 @@
+.navbar {
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(to right, #1a1a1a, #2c3e50) !important;
+    margin-left: 280px; /* Match sidebar width */
+    width: calc(100% - 280px); /* Adjust width accounting for sidebar */
+    z-index:99; /* Lower than sidebar */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+/* .navbar-brand:hover {
+    transform: scale(1.05);
+} */
+
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.8) !important;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    transform: translateY(-2px);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    padding-left: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    
+    .navbar-logo {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .navbar {
+        padding: 8px 16px;
+    }
+}

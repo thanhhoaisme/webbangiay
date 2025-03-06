@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    margin-left: 280px;
+    padding-top: 60px;
+    position: relative;
+    width: 100%;
+}
+
+.content-wrapper {
+    padding: 2rem;
+    min-height: calc(100vh - 60px);
+    background-color: #f4f6f9;
+}
+
+.search-box {
+    width: 300px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.modal {
+    z-index: 1055;
+}
+
+.modal-backdrop {
+    z-index: 1054;
+}
